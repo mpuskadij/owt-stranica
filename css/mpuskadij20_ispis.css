@@ -1,0 +1,36 @@
+@media print {
+    * {
+        background-color: rgb(163, 161, 161)!important;
+    }
+   
+
+    header,footer,nav,.nav-item {
+        display: none;
+    }
+
+    form [type="file"], fieldset ~ [type="submit"], [type="submit"] + [type="reset"] {
+        display: none;
+    }
+
+    article > video, article > audio {
+        display:none;
+    }
+
+    img.povecaj {
+        position: relative;
+        width: 100%;
+    }
+    img {
+        filter: grayscale(100);
+    }
+
+    table {
+        background-color:transparent;
+    }
+
+    form {
+        background-color: transparent;
+    }
+    
+
+}

@@ -1,0 +1,179 @@
+/*Sve*/
+* {
+    background-color: #df1f2d;
+    font-style: normal;
+}
+
+header > p {
+    margin: 0 auto;
+    width: 30em;
+    text-align: center;
+    border-style: dashed;
+    position: relative;
+    font-weight: bold;
+    
+}
+
+#prijava {
+    text-align: right;
+    display: inline-block;
+    margin: auto;
+}
+
+[href = "#zaglavlje"] {
+    float: right;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+}
+
+a.logo {
+    position: relative;
+    right: -50%;
+}
+
+footer {
+    position: relative;
+}
+
+/*CSS Grid*/
+.resetka {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    margin: 5rem auto;
+    width: min(90%, 75rem);
+    border-style: solid;
+    border-color:black;
+    padding:2%;
+}
+
+
+
+/*Multimedija*/
+
+@keyframes animacija_sirine {
+    from {width: 200px; height: 200px;}
+    to {width: 500px; height: 500px}
+}
+
+h2 {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+article img,video {
+    height: 200px;
+    width: 200px;
+}
+
+img.povecaj:hover{
+    animation-name: animacija_sirine;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+
+/*Popis */
+table,th,td,tr, tr a {
+    border: 2px solid;
+    background-color: transparent;
+}
+
+tr.parni {
+    background-color: #b11313;
+}
+
+tr.neparni {
+    background-color: #2b3784;
+
+}
+
+.parni:hover, .neparni:hover {
+    background-color: gold;
+    background-blend-mode: normal;
+}
+
+/*Index*/
+figcaption{
+    font-style: italic;
+}
+
+figure img {
+    position: relative;
+    z-index: 0;
+}
+
+[usemap] {
+    border-radius: 8%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Obrazac*/
+
+legend {
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+form {
+    background-color: transparent;
+}
+
+fieldset {
+    border-style: solid;
+    border-color: #2b3784;
+}
+
+input,textarea {
+    border: solid;
+    padding: 10px 15px;
+    background-color: #b11313;
+    box-sizing: content-box;
+    font-family:sans-serif;
+}
+
+input:focus,textarea:focus {
+    background-color: #2b3784;
+}
+
+label {
+    font-size: large;
+}
+
+a:visited  {
+    color: rgb(16,0,10);
+}
+
+input#sklonost_sali {
+    display:grid;
+    background: #b11313;
+    margin: 10px;
+}
+
+[type=submit] + [type=reset] {
+    margin-top: 1%;
+}
+
+[type=reset] ~ [type=submit] {
+    margin-left: 1%;
+}
+
+select {
+    background-color: #b11313;
+    border: solid;
+}
+option:hover,option::selection {
+    background-color: #2b3784;
+}
+
+/*O autoru*/
+
+div li {
+    list-style-type: none;
+}
+
+cite {
+    font-style: italic;
+}
+

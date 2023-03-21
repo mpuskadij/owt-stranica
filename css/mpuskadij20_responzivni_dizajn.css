@@ -1,0 +1,196 @@
+@media only screen and (max-width: 480px) {
+    @keyframes animacija_malog_ekrana {
+        from {width: 50%;}
+        to {width: 70%;}
+    }
+
+    header > p {
+        width: 100%;
+    }
+
+    [usemap] {
+        width: 100%;
+        height: auto;
+    }
+
+    area {
+        width:fit-content;
+    }
+
+    figcaption {
+        width: 100%;
+        text-align: justify;
+    }
+
+    [src="materijali/logo.png"],[src="../materijali/logo.png"] {
+        position: relative;
+        left: -12%;
+    }
+
+    #prijava {
+        top:0%;
+        position: absolute;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        margin-top: 2%;
+        font-weight: 900;
+    }
+
+    li a {
+        position: relative;
+        width: 100%;
+        top:100%;
+        right: 100%;
+        
+    }
+
+    cite {
+        text-align: justify;
+    }
+
+    li > input {
+        position: relative;
+        right: 100%;
+        top: 100%;
+    }
+
+    article img {
+        position: relative;
+        width: 50%;
+    }
+
+    img.povecaj:hover {
+        animation-name: animacija_malog_ekrana;
+        animation-duration: 4s;
+        animation-fill-mode: forwards;
+    }
+
+    article[id="video"] > h2 {
+        position: relative;
+        left: 30%;
+        text-align: justify;
+    }
+    article#audio > h2, article#slike > h2 {
+        position: relative;
+        left: 45%;
+        text-align: justify;
+    }
+
+    article#slike > figcaption {
+        text-align: justify;
+    }
+
+    video {
+        position: relative;
+        width: 100%;
+        margin-top: 20%;
+    }
+
+    audio {
+        position: relative;
+        left: 15%;
+        margin-top: 5%;
+    }
+    input[type="reset"] {
+        position: relative;
+        left: 10%;
+    }
+
+    tr td:nth-child(3),tr td:nth-child(4),tr td:nth-child(5),tr td:nth-child(6),tr td:nth-child(7),tr td:nth-child(8),tr td:nth-child(9),tr td:nth-child(10),
+    tr th:nth-child(3),tr th:nth-child(4), tr th:nth-child(5), tr th:nth-child(6), tr th:nth-child(7), tr th:nth-child(8), tr th:nth-child(9), tr th:nth-child(10) {
+        display: none;
+    } 
+
+    .resetka {
+        width: 100%;
+        box-sizing: border-box;
+        grid-template-columns: 1fr;
+    }
+    
+    .resetka img {
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+        left:100%;
+
+    }
+
+
+
+}
+
+@media only screen and (min-width: 480px) {
+    header > p {
+        width: 100%;
+    }
+
+    #prijava {
+        top:0%;
+        position: absolute;
+    }
+
+    [usemap] {
+        width: 100%;
+        height: auto;
+    }
+
+    [src="materijali/logo.png"],[src="../materijali/logo.png"] {
+        position: relative;
+        left: -3%;
+    }
+
+    nav a {
+        display: block;
+        text-align: center;
+        margin-top: 2%;
+        font-weight: 900;
+    }
+
+    video,audio {
+        margin-left: 10%;
+    }
+
+    tr td:nth-child(3),tr td:nth-child(4),tr td:nth-child(5),tr td:nth-child(6),tr td:nth-child(7),tr td:nth-child(8),tr td:nth-child(9),tr td:nth-child(10),
+    tr th:nth-child(3),tr th:nth-child(4), tr th:nth-child(5), tr th:nth-child(6), tr th:nth-child(7), tr th:nth-child(8), tr th:nth-child(9), tr th:nth-child(10) {
+        display: table-cell;
+    } 
+
+    table {
+        position: relative;
+        width: 100%;
+        table-layout: fixed;
+    }
+
+    td {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        word-wrap: break-word;
+    }
+
+    fieldset {
+       display: inline;
+       position: relative;
+    }
+
+    fieldset ~ fieldset {
+        display: inline-block;
+        margin:0;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        display: inline;
+    }
+
+    .resetka {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    
+
+    
+
+
+}

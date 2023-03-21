@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Marin Puškadija">
+    <meta name="description" content="form,select,br">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="print" href="css/mpuskadij20_ispis.css">
+    <link rel="stylesheet" href="css/mpuskadij20.css" type="text/css">
+    <link rel="stylesheet" href="css/mpuskadij20_responzivni_dizajn.css" type="text/css">
+    <script src="js/mpuskadij20.js"></script>
+
+    <title>Obrazac</title>
+</head>
+<body>
+
+    <header id="zaglavlje">
+        <a href="index.html" class="logo">
+            <img src="materijali/logo.png" alt="Spiderman logo koji se koristi na svakoj stranici" width="100" height="100">
+        </a>
+
+        <p>Obrazac</p>
+
+        <a href="prijava.html" id="prijava">Prijava</a>
+        
+        <noscript>
+            <dialog open>Vaš Web preglednik ne podržava Javascript!</dialog>
+        </noscript>
+
+    </header>
+
+    <nav>
+        <a href="index.html">Početna</a>
+        <a href="ostalo/multimedija.html">Multimedija</a>
+        <a href="ostalo/kreativna.html">Kreativna</a>
+        <a href="ostalo/o_autoru.html">O autoru</a>
+        <a href="podaci/popis.html">Popis</a>
+    </nav>
+
+    <main>
+        <br>
+
+        <form method="post" action="https://spider.foi.hr/OWT/materijali/ispis_forme.php" novalidate id="forma">
+            <fieldset>
+            <legend>Elementi zadani u zadaći:</legend>
+            <label for="naziv_spidermana">Puni naziv Spider-mana iz nekog svemira (string tipa: &quot;Spider-Man 2099&quot;):</label>
+            <input type="text" name="naziv_spidermana" id="naziv_spidermana" required>
+
+            <br>
+
+            <label for="opis_spidermana">Opis Spider-mana:</label>
+            <textarea name="opis_spidermana" id="opis_spidermana" rows="10" cols="40" maxlength="1000"></textarea>
+
+            <br><br>
+
+            <label>Osoba ispod maske:</label>
+
+            <br>
+
+                <input type="radio" name="osoba_ispod" value="peter_parker" id="peter" checked>
+                <label for="peter">Peter Parker</label>
+
+                <br>
+
+                <input type="radio" name="osoba_ispod" value="miles_morales" id="miles">
+                <label for="miles">Miles Morales</label>
+
+                <br>
+
+                <input type="radio" name="osoba_ispod" value="zenska_osoba" id="zena">
+                <label for="zena">Nenavedena ženska osoba</label>
+
+                <br>
+
+                <input type="radio" name="osoba_ispod" value="muska_osoba" id="muskarac">
+                <label for="muskarac">Nenavedena muška osoba</label>
+
+            <br><br>
+
+            <label for="godine">Godine:</label>
+            <input type="number" required max="100" min="0" value="1" name="godine" id="godine">
+
+            <br><br>
+
+            <label for="sposobnosti">Sposobnosti:</label>
+            <select multiple name="sposobnosti" id="sposobnosti" size="10">
+
+                <optgroup label="Zajedničke sposobnosti">
+                    <option value="supersnaga">Supersnaga</option>
+                    <option value="penjanje">Penjanje po zidovima</option>
+                    <option value="poboljsano_zacjeljivanje">Poboljšano zacjeljivanje</option>
+                    <option value="predosjecaj_opasnosti">Predosjećaj opasnosti</option>
+                    <option value="poboljsana_brzina">Poboljšana brzina</option>
+                </optgroup>
+
+                <optgroup label="Specifične sposobnosti">
+                    <option value="organska_mreza">Organska mreža</option>
+                    <option value="transformacija">Transformacija</option>
+                    <option value="kamuflaza">Kamuflaža</option>
+                    <option value="kiselina">Pljuvanje kiseline</option>
+                    <option value="przenje">Prženje pomoću prstiju</option>
+                    <option value="kontrola_pauka">Kontrola pauka</option>
+                    <option value="nocni_pogled">Noćni pogled</option>
+                    <option value="buducnost">Pogled u budućnost</option>
+                </optgroup>
+
+            </select>
+            
+            <br><br>
+
+            <label for="datum_rodenja">Datum rođenja:</label>
+            <input type="datetime-local" name="datum_rodenja" id="datum_rodenja">
+
+            </fieldset>
+
+            <br><br>
+
+            <fieldset>
+            <legend>Vlastiti elementi:</legend>
+
+            <label for="kostim">Datoteka kostima (opcionalno):</label>
+            <input type="file" name="kostim" id="kostim">
+
+            <br><br>
+
+            <label for="wiki">URL stranica Spider-mana:</label>
+            <input type="url" name="wiki" id="wiki">
+
+            <br><br>
+
+            <label>Neprijatelji njegovog svemira:</label><br>
+
+            <input type="checkbox" value="vulture" name="vulture" id="vulture" name="checkbox">
+            <label for="vulture">Vulture</label><br>
+
+            <input type="checkbox" value="otto_octavius" name="otto_octavius" id="otto_octavius" name="checkbox">
+            <label for="otto_octavius">Dr. Otto Octavius</label><br>
+
+            <input type="checkbox" value="venom" name="venom" id="venom">
+            <label for="venom">Venom</label><br>
+
+            <input type="checkbox" value="green_goblin" name="green_goblin" id="green_goblin" name="checkbox">
+            <label for="green_goblin">Green Goblin</label><br>
+
+            <input type="checkbox" value="lizard" name="lizard" id="lizard" name="checkbox">
+            <label for="lizard">Lizard</label><br>
+
+            <br>
+
+            <label for="sklonost_sali">Sklon šali:</label>
+            <input type="range" id="sklonost_sali" name="sklonost_sali" min="0" max="5" value="5">
+
+            <br><br>
+
+            </fieldset>
+
+            <input type="submit" value="Pošalji Spider-mana!">
+            <input type="reset" value="Resetiraj Spider-mana!">
+            
+        </form>
+    </main>
+
+    <footer>
+        <a href="https://creativecommons.org/licenses/?lang=hr">
+            <img src="materijali/ikona_licence.png" alt="ikona licence">
+        </a>
+
+        &copy; 2022.
+
+        <a href="mailto:mpuskadij20@foi.hr">Marin Puškadija</a>
+
+        <a href="http://validator.w3.org/check?uri=https://spider.foi.hr/OWT/2022/zadaca_03/mpuskadij20/obrazac.html">
+            <img src="https://spider.foi.hr/OWT/materijali/slike/HTML5.png" alt="HTML5 slika" width="50">
+        </a>
+
+        <br>
+
+        <a href="#zaglavlje">
+            <img src="materijali/ikona_povratak_na_zaglavlje.jpg" alt="ikona za povratak na zaglavlje" width="50">
+        </a>
+
+    </footer>
+</body>
+
+</html>
